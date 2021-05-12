@@ -850,5 +850,17 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+add_action('init','custom_login');
+function custom_login(){
+ global $pagenow;
+ //  URL for the HomePage. You can set this to the URL of any page you wish to redirect to.
+ $blogHomePage = get_bloginfo('url');
+ //  Redirect to the Homepage, if if it is login page. Make sure it is not called to logout or for lost password feature
+ if( 'wp-login.php' == $pagenow && $_GET['action']!="logout" && $_GET['action']!="lostpassword") {
+     wp_redirect($blogHomePage);
+     exit();
+ }
+}
+
 ?>
 
