@@ -6,7 +6,7 @@
         <div class="carousel-inner" style="background-image: url('<?php echo $image[0]; ?>')">
             <div class="carousel-item active">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 rate-suppliers-banner-text">
+                    <div class="col-sm-6 rate-suppliers-banner-text">
                         <h1><?php the_field('clients_banner_header'); ?></h1>
                         <p><?php the_field('clients_banner_subtitle'); ?></p>
                     </div>

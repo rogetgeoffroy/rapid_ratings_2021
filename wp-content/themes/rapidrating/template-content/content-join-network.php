@@ -7,7 +7,7 @@
       <div class="carousel-item active">
       <!--img src="https://wordpress-567571-1831185.cloudwaysapps.com/wp-content/uploads/2021/04/rate_suppliers_bg.png" width="100%" height="auto" /-->
       <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 rate-suppliers-banner-text">
+      <div class="col-sm-6 rate-suppliers-banner-text">
         <h1><?php the_field('join_network_banner_header'); ?></h1>
         <p><?php the_field('join_network_banner_subtitle'); ?></p>
       </div>
